@@ -18,6 +18,7 @@ body{
 .contain {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin-left:70px;
 }   
 .line button {
   	height: 30px;
@@ -75,7 +76,10 @@ body{
 
 }
 marquee{
-	color: white;
+	color: black;
+	font-family: arial;
+	font-weight: 600;
+
 }
 
 img{
@@ -93,15 +97,11 @@ margin-left:1200px;
 .menu{
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;		
+		align-items: center;
+		text-align: center;
+		margin-left: 230px;		
 	}
-.menu a{
-		height:50px;
-		color: white;
-		padding-left: 25px;
-		padding-right: 30px;
-		text-decoration: none;
-}
+ 
 input{
 	width: 200px;
 	align-items:center;
@@ -115,6 +115,136 @@ input{
 	margin-left: 1250px;
 }
 .result1{
-	color:red;
-	margin-left: 650px;
+	color:black;
+	margin-left: 50px;
 }
+.imgAuto{
+	
+	height: 420px;
+}
+
+.contain1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left:70px;
+
+}  
+.btsum{
+	margin-left: 20px;
+	width:40px;
+	height: 30px;
+	padding:5px;
+}
+.btclear{
+	margin-left:20px;
+	width:70px;
+	height: 30px;
+	padding:5px;
+}
+.btsort{
+	margin-left:20px;
+	width:50px;
+	height: 30px;
+	padding:5px;
+}
+.btorder{
+	margin-left:20px;
+	width:50px;
+	height: 30px;
+	padding:5px;
+}
+.sort{
+	color: red;
+	margin-left: 50px;
+
+}
+h3{
+	padding: 15px;
+	color: white;
+	margin-left:30px;
+}
+.div1 {
+ 	
+    justify-content: space-between;
+    width: 300px;
+    height: 100px;
+    margin-left: 350px;
+    border-style: solid;
+    border-color: red;
+    align-items: center;
+
+  }
+  
+  .padBt{
+  	display: flex;
+  	text-align: center;
+  	padding: 40px;
+  }
+  .info {
+
+        height: 300px;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 17px;
+        text-align: center;
+        margin-left:400px;
+
+     }   
+    .info input{
+            width: 100%;
+           height: 30px;
+           margin-bottom: 15px;
+           border-radius: 5px;
+           border: 1px solid #eeeeee;
+          
+    }
+    .info textarea{
+        width: 100%;
+        height: 80px;
+    }
+    .form-pay{
+        border: none;
+        width: 350px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 17px;
+        
+    }
+    .form-pay select{
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #80bb35;
+        margin-bottom: 10px;
+    }
+    .orr{
+    	display: flex;
+    	margin-left: 10px;
+    	padding: 50px;
+    }
+    .payh3{
+    	margin-left: 90px;
+    	color: black;
+    }
+    .pay{
+    	color: black;
+    }
+    .butOrder{
+    	
+    	margin-left: 100px;
+    }
+
+    .contact{
+    	text-align: center;
+    	align-items: center;
+    	background: gray;
+    	width: 100%;
+    	
+    }
+
+    h2{
+    	
+    	color: black;   
+    	padding: 10px;	
+    }    
+    
