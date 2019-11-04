@@ -1,12 +1,12 @@
-		var auto =["img/1.jpg","img/2.jpg","img/3.png","img/9.jpg"];
-			var position = 0;
-			setInterval(function(){
-				position = position+1;
-			document.getElementById('myImage').src= auto[position];
-			if(position == 3){
-				position =0;
-			}
-			},1500);
+	var auto =["img/1.jpg","img/2.jpg","img/3.png","img/9.jpg"];
+	var position = 0;
+		setInterval(function(){
+		position = position+1;
+		document.getElementById('myImage').src= auto[position];
+		if(position == 3){
+		position =0;
+		}
+	},1500);
 	var product1 = {
 		 	image:"img/1.jpg",
             name: "Pure Snowy",
