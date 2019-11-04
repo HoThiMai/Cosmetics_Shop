@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>COSMESTICS SHOP</title>
+	<title>COSMESTICS SHOP</title>
 	<link rel="stylesheet" type="text/css" href="theme.css">	
 </head>
-<body>
- 	<div class="menu">
-		<marquee> COSMETICS SHOP: 99 To Hien Thanh, Phuoc My,Son Tra,Da Nang</marquee>
-		<img class="img" src="img/logo.jpg">
-		<h3><a href="index.html">Home</a>
-			<a href="#">Cosmetics Korean</a>
-			<a href="#">Cosmetics VietNamese</a>
-			<a href="#">Cosmetics ThaiLan</a>
-			<a href="#">Contact</a>
-			<a href="#">Help</a>
-		</h3>	
+	<body>
+	<div>
+		<marquee> MAI'S COSMETICS SHOP : 99 To Hien Thanh - Phuoc My - Son Tra - Tp Da Nang</marquee>
+	</div>
+	<div class="menu">	
+			<h3 onclick="displayPro()">Home </h3>
+			<h3 onclick="displayProductKorean()" >Cosmetics Korean</h3>
+			<h3 onclick="displayProductVn()">Cosmetics VietNamese </h3>
+			<h3 onclick="displayProductThaiLan()">Cosmetics ThaiLan</h3>			
+	
 	</div>
 	<div>
-	    <input class="input" type="text" name="search" id="search" placeholder="Search">
+		<img class="imgAuto" id="myImage" src="img/9.jpg">
+	</div>
+	<div>
+	 	<input class="input" type="text" name="search" id="search" placeholder="Search">
 	    <button onclick="search()">Search</button>    	
-	    <button class="bt2"  onclick="displayCar()">Gio hang</button>   
+	        <button class="bt2" onclick="displayCar()">Cart</button>   
     </div>
-    	<button  onclick="displayPro()">X</button> 
 	    <div id="container">
 	    </div>
 	    <div id="container_pro">
@@ -29,13 +30,45 @@
         <div id="container_cart">
             <div id="container_C">
             </div>
-            <center>
-           	<button id="btn-sum" onclick="sumClick1()" style="display: none;">Sum</button>      
-            </center>
-             <h4 class="result1" id="result">             	
-             </h4>
-        </div> 	
-        < <script language="javascript" src="js.js">
+            <div class="padBt">
+           		<button class="btsum" id="btn-sum" onclick="sumClick1()" style="display: none;">Sum
+           		</button></br>
+           		<button class="btclear" id="btn-clear" onclick="clear1()" style="display: none;">DeleteAll
+           		</button></br>
+           		<button class="btsort" id="btn-sort" onclick="sortClick()" style="display: none;">Sort
+           		</button></br>    
+           		<button class="btorder" id="btn-order" onclick="orderClick()" style="display: none;">Order
+           		</button></br>    
+           		</div>
+	             <h4 class="result1" id="result" >             	
+	             </h4>              
+    <div class="orr">
+        <div id ="info"class="info" style="display: none">
+        	<h3 class="pay">Enter The Your Information</h3>      
+            <input class="i-info" type="text" name="" placeholder="Họ và tên" id="name">
+            <input class="i-info" type="text" name="" placeholder="Điện thoại" id="phone">
+            <input class="i-info" type="text" name="" placeholder="Email" id="email">
+            <input class="i-info" type="text" name="" placeholder="Địa chỉ" id="address">
+            <textarea name="" placeholder="Ghi chú" id="note"></textarea>    
+   		</div>
+        <div id="pay" class="form-pay" style="display: none;">
+          	<h3 class="payh3">Payment Methods</h3>
+            <select id="selectCard" onchange="select()">
+                <option value="1">Payment On Receipt</option>
+                <option value="2">Payment By Card</option>
+                <option value="3">Pay With Electronic Wallet</option>
+           </select>
+                <button onclick="comfim()" class="butOrder">Order Confirmation</button>
+        </div>
+	</div>
+        <script language="javascript" src="js.js">
         </script>
+        <div class="contact">        	
+        	<h5>Name : Ho Thi Mai <br> </h5>
+        	<h5> Address : 101B Le Huu Trac - Phuoc My - Son Tra - Da Nang <br></h5>
+        	<h5> Email : Mai2.ho21@student.passerellesnumeriques.org <br></h5>
+        	<h5>Phone Number : 0353150076 <br></h5>      
+        </div>
+
 </body>
 </html>
